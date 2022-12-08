@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    left: 25%;
+    width: 20%;
+    margin: 15px 15px 15px 15px;
+    border: 2px solid greenyellow;
+}
+#btn{
+    text-align: center;
+    font-size: 30px;
+    padding: 25px 25px;
+    margin: 10px;
+    height: 5rem;
+    width: 5rem;
+}
+#txt{
+    font-size: 20px;
+    margin-top: 15px;
+    width: 300px;
+    height: 2vh;
+}
