@@ -17,27 +17,15 @@ const obj = {
 
 }
 //option 1
-let hobbies = Object.values(obj)
-  .map((person) => person.hobbies)
+let hobbie = Object.values(obj)
+  .map((person) => person.anime)
   .flat();
-console.log("main",hobbies);
+console.log("main",hobbie);
 
 const elementCounts = {};
 
-hobbies.forEach(element => {
+hobbie.forEach(element => {
   elementCounts[element] = (elementCounts[element] || 0) + 1;
-});
-
-console.log(elementCounts);
-
-
-//option 2
-
-const arr = [...obj.pavi.hobbies,...obj.gowri.hobbies,...obj.vibin.hobbies]
-const elementCounts1 = {};
-
-arr.forEach(element => {
-  elementCounts1[element] = (elementCounts1[element] || 0) + 1;
 });
 
 console.log(elementCounts);
