@@ -1,27 +1,25 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: absolute;
-    top: 25%;
-    right: 25%;
-    left: 25%;
-    width: 20%;
-    margin: 15px 15px 15px 15px;
-    border: 2px solid greenyellow;
+.shredder {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  position: relative;
 }
-#btn{
-    text-align: center;
-    font-size: 30px;
-    padding: 25px 25px;
-    margin: 10px;
-    height: 5rem;
-    width: 5rem;
+
+.money {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+  animation: shred 1s linear forwards;
 }
-#txt{
-    font-size: 20px;
-    margin-top: 15px;
-    width: 300px;
-    height: 2vh;
+
+@keyframes shred {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
 }
